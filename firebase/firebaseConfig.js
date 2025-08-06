@@ -1,7 +1,8 @@
 import {initializeApp} from "firebase/app";
 import {getDatabase} from "firebase/database";
 
-const firebaseConfig = { apiKey: "AIzaSyAoer09OK5EPK6oFtCjIs8FxfHUVRYppUA",
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
   authDomain: "lab-server-5128b.firebaseapp.com",
   databaseURL: "https://lab-server-5128b-default-rtdb.asia-southeast1.firebasedatabase.app/",
   projectId: "lab-server-5128b",

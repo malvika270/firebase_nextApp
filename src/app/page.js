@@ -1,7 +1,7 @@
 "use client";
 import { useEffect,useState } from "react";
 import {ref,onValue} from "firebase/database";
-import { database } from "./firebase/firebaseConfig";
+import { database } from "/firebase/firebaseConfig";
 
 export default function Home() {
   const [allData, setAllData] = useState(null);
