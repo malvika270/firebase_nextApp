@@ -12,12 +12,14 @@ export default function Home() {
     const data_reference = ref(database, "logs");
     onValue(data_reference, (snapshot) => {
       const data =snapshot.val();
-      entries=[];
+      let entries=[];
       if(data){
         for(let sub_folder in data){
           if(data[sub_folder]){
             let logs = data[sub_folder];
+            console.log(logs)
             for(let log_value in logs){
+              
               entries.push({
                 uid: logs.UID,
                 name: logs.Name,
